@@ -78,16 +78,41 @@ class App extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const [
                   Button(
                     text: 'Transfer',
-                    bgColor: const Color(0xFFF1B33B),
+                    bgColor: Color(0xFFF1B33B),
                     textColor: Colors.black,
                   ),
                   Button(
                     text: 'Requesr',
-                    bgColor: const Color(0xFF1F2123),
+                    bgColor: Color(0xFF1F2123),
                     textColor: Colors.white,
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 100,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  const Text(
+                    'Wallets',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 36,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  Text(
+                    'View All',
+                    style: TextStyle(
+                      color: Colors.white.withOpacity(0.8),
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
                 ],
               )
